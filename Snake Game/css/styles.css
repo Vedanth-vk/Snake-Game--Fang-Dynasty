@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("/assests/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+#board{
+    background: linear-gradient(rgb(109, 255, 109), rgb(254, 254, 86));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    border-radius: 2px;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background-color: red;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.food{
+    border-radius: 100px;
+    background-color: rgb(240, 255, 37);
+}
+
+.snake{
+    background-color: purple;
+}
